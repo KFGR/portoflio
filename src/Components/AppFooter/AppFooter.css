@@ -1,0 +1,33 @@
+.footer-continer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding-top: 32px;
+}
+
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-icons{
+    color:yellow;
+    padding:15px;
+    display: flex;
+    font-size: 25px;
+}
+footer ul li a{
+    text-transform: none;
+}
+
+ion-icon{
+    font-size: 400%;
+    color: blue;
+    size: large;
+}

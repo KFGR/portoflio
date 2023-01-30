@@ -1,0 +1,134 @@
+.app-header{
+    margin-top: 2%;
+}
+
+navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0;
+    box-shadow: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-menu{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    position: sticky;
+    border-radius: 50px 50px 50px 50px;
+    /* background-image: url("../../../public//logo192.png"); */
+    /* filter: blur(5px); */
+    /* box-shadow: 0px 10px 20px 0px whitesmoke; */
+    /* box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2); */
+
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); */
+    /* transform: skewY(10deg); */
+    /* transform: skewY(10deg); */
+    /* opacity: 0.5; */
+}
+
+@media (max-width: 991px){
+    .container-menu{
+        display: inline-block;
+        margin: none;
+        width: 100%;
+        justify-content: left;
+    }
+
+    /* .app-header{
+        margin-top: 2%;
+    } */
+}
+
+
+ul {
+    position: sticky;
+    left: 75%;
+    top: 75%;
+    /* transform: translate(0%, 0%); */
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    margin: 1px;
+    font-family: arial;
+    position: relative;
+}
+
+ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+ul li:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    border-top: 5px solid #009ccf;
+    border-left: 5px solid #009ccf;
+    left: 0;
+    top: 0;
+    /* right: -50px; */
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ul li:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    border-right: 5px solid #53565a;
+    border-bottom: 5px solid #53565a;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ul li:hover:before {
+    left: -10px;
+    top: -10px;
+    opacity: 1;
+}
+
+ul li:hover:after {
+    right: -10px;
+    bottom: -10px;
+    opacity: 1;
+}
+
+
+
+li {
+/* To make letters more bolder with a text shadow */
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+    /* text-shadow: 1px 1px 2px black; */
+}
+.py-4{
+    padding-top:1.5rem!important;
+    padding-bottom: 1.5rem;
+}
+
