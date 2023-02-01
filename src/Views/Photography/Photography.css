@@ -1,117 +1,87 @@
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.introduction-container{
-    width: 100%;
-    /* height: 100vh; */
+/* -----------------------------------css */
+.gallery{
+    padding:20px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    /* background-color: #eee; */
-    padding: 0 1.5em;
 }
 
-img {
-    width: 100%;
+.gallery img{
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
 }
 
-.introduction-card{
-    width: 70%;
-    max-width: 98rem;
-    padding: 5rem;
-    background-color: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
-    display: flex;
-    align-items: center;
-    border-radius: .8rem;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-/* .introduction-card:hover{
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
-} */
-
-.intrduction-image{
-    min-width: 35rem;
-    max-width: 35rem;
-    height: 30rem;
-    transform: translateX(-8rem);
+.photo-box{
+    /* margin: 5% 5% 0 5%; (top, right, bottom, and left). */
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+    box-sizing: content-box;
+    overflow: hidden; /*if content is to big, it wont show*/
+    display: inline-block;
+    color: white;
     position: relative;
-
-}
-.intrduction-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: .8rem; 
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
-
-    /* cambiar el border para que sea un circulo */
+    background-color: white;
 }
 
-
-.intrduction-image::before{
-    content: '';
-    width: 100%;
-    height: 100%;
+.caption{
     position: absolute;
-    top: 0;
-    left: 0;
-    /* background: linear-gradient(to right, rgba(79,172,254, .8),
-                                            rgba(0,242,254,.8)); */
-    /* box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05); */
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
-
-    border-radius: .8rem;
+    bottom: -25px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.transparent-box{
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0,0,0,0);
+    position:absolute;
+    top:0;
+    bottom: 0;
+    transition: background-color 0.3s ease;
+}
 
+.photo-box:hover img { 
+    transform: scale(1.1);
+}
+  
+.photo-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+}
 
-/* .introduction-information{
+.photo-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+  
 
+.caption > p:nth-child(1){
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    opacity: 100%;
+    margin-bottom: 0;
+}
 
+.caption > p:nth-child(2) {
+    /* :nth-child(number)-> matches the element based on their position among a group */
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    opacity: 75%;
+    margin-bottom: 1rem;
+}
+
+img{
+    object-fit: cover;
+}
+
+/* .container-fluid fluid{
+    justify-content: center;
+    display: grid;
+    background-color: green;
 } */
-
-.introduction-title{
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem; /*top, right, bottom, left*/
-    text-transform: uppercase;
-    /* color: #4facfe; */
-    color: #009ccf;
-}
-
-.introduction-text{
-    margin-bottom: 3rem;
-    font-size: 1.4rem;
-    color: #53565a;
-}
-
-
-@media  (max-width: 1247px){
-    .introduction-container{
-        max-width: 80%;
-        flex-direction: column;
-        display: contents;
-    }
-    .intrduction-image{
-        min-width: 100%;
-        max-width: 100%;
-        transform: translate(0,0);
-        box-shadow: none;
-    }
-    .intrduction-image img{
-        box-shadow: none;
-    }
-    .introduction-card{
-        display: contents;
-        box-shadow: none;
-
-    }
-}

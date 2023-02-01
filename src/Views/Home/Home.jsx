@@ -1,18 +1,21 @@
 import "./Home.css";
 import React from "react";
-import AppHeader from '../../Components/AppHeader';
-import AppFooter from '../../Components/AppFooter';
+// import AppHeader from '../../Components/AppHeader';
+// import AppFooter from '../../Components/AppFooter';
 function template() {
   return (
     <div className="home">
-      <AppHeader></AppHeader>
+      {/* <AppHeader></AppHeader> */}
 
       {/* Profile card, personal information */}
       <section id="intro" className="container-fluid">
         <div className="introduction-container">
+       
+
+           
           <div className="introduction-card">
-            <div className="intrduction-image">
-              <img src={require("./HomeAssets/IMG_6891.JPG")} alt=''></img>
+            <div className="intrduction-image ">
+              <img src={require("./HomeAssets/IMG_6891.JPG")} alt=''/>
             </div>
             <div className="introduction-information">
               <h1 className="introduction-title" style={{fontWeight: 'bold'}}>Kelvin Figueroa</h1>
@@ -121,7 +124,7 @@ function template() {
           {/* Ends Timeline for projects */}
         </div>
       </div>
-      <AppFooter></AppFooter>
+      {/* <AppFooter></AppFooter> */}
     </div>
   );
 };

@@ -18,10 +18,11 @@
 
 img {
     width: 100%;
+    height: auto;
 }
 
 .introduction-card{
-    width: 70%;
+    width: 100%;
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
@@ -43,15 +44,21 @@ img {
     height: 30rem;
     transform: translateX(-8rem);
     position: relative;
-
 }
+
+
 .intrduction-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     border-radius: .8rem; 
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    /* box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2); */
+    
+    background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 0);
+    background-color: #007bff;
+
+    background-size: 50px 30px;
 
     /* cambiar el border para que sea un circulo */
 }
@@ -94,28 +101,42 @@ img {
 }
 
 
-@media  (max-width: 1247px){
+@media  (max-width: 1570px){
+    .introduction-card{
+        display: grid;
+        /* box-shadow: none; */
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
     .introduction-container{
         max-width: 80%;
         flex-direction: column;
         display: contents;
+        height: auto;
+        /* object-fit: contain; */
     }
     .intrduction-image{
-        min-width: 100%;
+        /* min-width: 100%; */
         max-width: 100%;
         transform: translate(0,0);
         box-shadow: none;
+        height: auto;
     }
     .intrduction-image img{
         box-shadow: none;
+        object-fit: contain;
     }
-    .introduction-card{
-        display: contents;
-        box-shadow: none;
-
-    }
+   
 }
 
+@media (max-width: 645px){
+    .intrduction-image{
+        min-width: 100%;
+        /* max-width: 100%; */
+    }
+}
 
 
 /* ------------------------------------Timeline----------------------------------------- */
@@ -201,3 +222,28 @@ div.row{
         margin-top: 30px;
     }
 }
+
+
+
+#pattern{
+    background-image: radial-gradient(circle at 1px 1px, black 3px, transparent 0);
+    background-size: 50px 30px;
+    background-color: white;
+    /* translate: transition(-106px, -35px); */
+}
+
+.dotted-square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inner-square {
+    width: 150px;
+    height: 150px;
+    border: 1px dotted black;
+  }
+  
