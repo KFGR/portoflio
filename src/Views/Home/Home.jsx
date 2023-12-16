@@ -77,7 +77,7 @@ function template() {
                 </p>
               </div>
               <div className="box" >
-                <h4 >2023 - 2023</h4>
+                <h4 >2023 - Current</h4>
                 <h3>Cloud Support Engineer at AWS</h3>
                 <p>
                   As a Cloud Engineer I work directly with client's to better their application's performance and availability while working with high demand services on AWS. 
