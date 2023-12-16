@@ -18,11 +18,10 @@ function template() {
               <img src={require("./HomeAssets/IMG_6891.JPG")} alt=''/>
             </div>
             <div className="introduction-information">
-              <h1 className="introduction-title" style={{fontWeight: 'bold'}}>Kelvin Figueroa</h1>
+              <h1 className="introduction-title" style={{fontWeight: 'bold'}}>Kelvin Figueroa</h1> 
               <p className="introduction-text"style={{fontWeight: 'bold'}}>
-                I am a Computer Engineering student with over a year of experience in IT 
-                administration and expertise in Azure and AWS. I have completed an internship 
-                as a Cloud Support Associate with AWS and have additional experience as a web 
+                Graduated Computer Engineer that has over a year of experience as an IT Administrator and expertise on Azure Services and AWS.
+                I have transitioned from academia to a professional role as Cloud Engineer with AWS. Additionally, I have experience as a web 
                 and embedded developer, with a total of one year in these roles.
               </p>
             </div>
@@ -62,14 +61,30 @@ function template() {
                 <h3>JR. Web Developer at Inteldot</h3>
                 <p>{"As an Entry Level Programmer I've worked with python and AWS, specifically on the  backend of a serverless application project. I had the opportunity  to create, read and modify code to work with the basic functions of DynamoDB, using the Boto3 library and also creating HTTP responses for the web application."}</p>
               </div>
+              <div className="box">
+                <h4>2022 - 2023</h4>
+                <h3>Backend Developer (Self Employed)</h3>
+                <p>{"As a Backend developer I was working on creating API endpoints using DynamoDB on AWS and sending data to Odoo. Hence, I was able to review, modify and create code based on Odoo Schema's to send data from the database to the client's Administrator dashboard using tags on current and new records."}</p>
+              </div>
               <div className="box" >
                 <h4 >2022 - 2022</h4>
-                <h3>Cloud Support Associate at AWS</h3>
-                <p>Internship experience based on creating, managing and troubleshooting networking architectures with services found on Amazon Web Service.
+                <h3>Cloud Support Internship at AWS</h3>
+                <p>
+                  Internship experience based on creating, managing and troubleshooting networking architectures with services found on Amazon Web Service.
                    During the internship I had the opportunity to work with several cases which included serverless, compute and storage services 
                    such as Lambda, EC2, CloudFront and more. Also had a little project which was to create a simple website using an EC2 instant
                    running apache server, MariaDB and wordpress.
-</p>
+                </p>
+              </div>
+              <div className="box" >
+                <h4 >2023 - 2023</h4>
+                <h3>Cloud Support Engineer at AWS</h3>
+                <p>
+                  As a Cloud Engineer I work directly with client's to better their application's performance and availability while working with high demand services on AWS. 
+                  Additionally, I work on troubleshooting customer's servers issues and help them migrate their On-Premises servers to AWS.
+
+                  I have also worked to provide internal documentation for AWS, that help new hires and current engineers to be better and faster at solving customer's problems.
+                </p>
               </div>
             </div>
 
